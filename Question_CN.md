@@ -35,8 +35,14 @@ https://github.com/user-attachments/assets/cbf06ce6-4dc8-4dae-80ac-d96e185ded61
 * 卸载游戏时，如何保留之前下载的游戏资源数据
   	* <img src="img/DATA_01.jpg" width="300px">
 	* 这就是数据下载位置，自己根据游戏包名来找，把该文件夹重命名为其他，安装完新版本APK后再把该文件夹名称改回来
- 	* 通过上述方法绕过重新下载数据后，小概率会出现bug，参考[#91](https://github.com/JMBQ/azurlane/issues/91)
+ 	* 通过上述方法绕过重新下载数据后，概率会出现`Not enough storage space to install required resources.`
  	* 未解锁BL的手机可以使用MT管理器，依旧可以重命名该文件夹<br><br>
+
+* 怎么解决`Not enough storage space to install required resources.`
+ 	* 本质上就是游戏的所有者变更了，导致数据文件夹无权限访问
+    * 简单处理办法：**删除之前保留的游戏数据文件夹（不是对应的OBB文件夹），运行游戏，让游戏来帮你下载数据**
+    * 复杂处理办法：比较绕，需要动脑，就不说了
+
 * 每次开启游戏都要进行一次功能选择，能不能自动保存之前的选择
   * 悬浮窗`设置`->`保存配置`开启<br><br>
 * 能不能像其他mod那样增加XXXXX功能
